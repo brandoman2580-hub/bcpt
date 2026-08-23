@@ -34,7 +34,7 @@ export function Header() {
               height={64}
               className="h-16 w-auto" 
             />
-            <span className="text-2xl font-bold text-teal-600">Blossoming Connections</span>
+            <span className="text-2xl font-bold text-teal-600">Blossoming Connections Pediatric Therapy</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,12 +52,6 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="bg-teal-500 text-white px-6 py-2 rounded-full hover:bg-teal-600 transition-colors"
-            >
-              Get Started
-            </Link>
           </nav>
 
           {/* Mobile Menu Button */}

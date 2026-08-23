@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Phone, MapPin, Clock, Send } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
 import { Input } from '@/app/components/ui/input';
 import { Textarea } from '@/app/components/ui/textarea';
@@ -20,7 +20,7 @@ export default function ContactPage() {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+    alert('Thank you for your message! I will get back to you soon.');
     setFormData({
       name: '',
       email: '',
@@ -44,7 +44,7 @@ export default function ContactPage() {
         <div className="text-center space-y-6">
           <h1 className="text-4xl sm:text-5xl text-gray-800">Get in Touch</h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            We'd love to hear from you! Reach out with any questions or to schedule a consultation
+            I&apos;d love to hear from you! Reach out to get more information or to ask questions
           </p>
         </div>
       </section>
@@ -55,7 +55,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-lg">
-              <h2 className="text-2xl text-gray-800 mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl text-gray-800 mb-6">Send Me a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Label htmlFor="name" className="text-gray-700 mb-2 block">
@@ -106,7 +106,7 @@ export default function ContactPage() {
 
                 <div>
                   <Label htmlFor="childAge" className="text-gray-700 mb-2 block">
-                    Child's Age
+                    Child&apos;s Age
                   </Label>
                   <Input
                     id="childAge"
@@ -131,7 +131,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     rows={5}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition-colors resize-none"
-                    placeholder="Tell us about your concerns or what you'd like to discuss..."
+                    placeholder="Tell me about your concerns or what you'd like to discuss..."
                   />
                 </div>
 
@@ -157,19 +157,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-medium text-gray-800 mb-1">Phone</h3>
                       <a href="tel:5551234567" className="text-gray-600 hover:text-teal-600 transition-colors">
-                        (555) 123-4567
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Mail className="text-white" size={20} />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-medium text-gray-800 mb-1">Email</h3>
-                      <a href="mailto:hello@blossomingconnections.com" className="text-gray-600 hover:text-teal-600 transition-colors break-all">
-                        hello@blossomingconnections.com
+                        (509) 499-6047
                       </a>
                     </div>
                   </div>
@@ -181,9 +169,8 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-medium text-gray-800 mb-1">Location</h3>
                       <p className="text-gray-600">
-                        123 Therapy Lane<br />
-                        Suite 100<br />
-                        Cityville, ST 12345
+                        1400 S 45th Ave<br />
+                        West Richland, WA 99353
                       </p>
                     </div>
                   </div>
@@ -203,50 +190,13 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-
-              {/* Quick Info */}
-              <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-3xl p-8">
-                <h3 className="text-xl font-medium text-gray-800 mb-4">What to Expect</h3>
-                <div className="space-y-3 text-gray-700">
-                  <p className="flex items-start gap-2">
-                    <span className="text-teal-600 mt-1">✓</span>
-                    <span>We typically respond within 24 hours</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="text-teal-600 mt-1">✓</span>
-                    <span>Free initial phone consultation</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="text-teal-600 mt-1">✓</span>
-                    <span>Flexible scheduling options available</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="text-teal-600 mt-1">✓</span>
-                    <span>Warm, welcoming environment</span>
-                  </p>
-                </div>
-              </div>
-
-              {/* FAQ Link */}
-              <div className="bg-white rounded-3xl p-8 shadow-lg text-center">
-                <h3 className="text-xl font-medium text-gray-800 mb-3">Have Questions?</h3>
-                <p className="text-gray-600 mb-4">
-                  Check out our Resources page for helpful information and frequently asked questions
-                </p>
-                <a
-                  href="/resources"
-                  className="inline-block text-teal-600 hover:text-teal-700 font-medium"
-                >
-                  View Resources →
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Map Placeholder */}
-      <section className="py-16">
+      {/* Map Placeholder - Will be added later */}
+      {/* <section className="py-16">
         <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
           <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
             <div className="bg-gradient-to-r from-teal-200 to-blue-200 h-96 flex items-center justify-center">
@@ -258,7 +208,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
