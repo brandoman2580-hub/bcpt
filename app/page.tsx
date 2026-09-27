@@ -34,7 +34,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-8 max-w-4xl">
           <div className="text-center space-y-6">
             <h2 className="text-3xl text-gray-800">Mission Statement</h2>
-            <p className="text-gray-700 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-gray-700 leading-relaxed max-w-2xl mx-auto italic">
               My mission is to build sustainable, lifelong communication growth centered on prioritizing trust and emotional security.  This can be accomplished through child-led therapy with paced progression, active family participation, and finding motivating and diverse modalities of communication.
             </p>
           </div>
@@ -44,7 +44,7 @@ export default function HomePage() {
       {/* Credentials - Will be added later, if needed */}
       {/* <section className="py-16">
         <div className="container mx-auto px-4 sm:px-8 max-w-4xl">
-          <div className="bg-gradient-to-r from-teal-400 to-blue-400 rounded-3xl p-8 sm:p-10 text-center text-white space-y-3 shadow-lg">
+          <div className="bg-gradient-to-r from-teal-400 to-blue-400 rounded-3xl p-8 sm:p-10 text-center text-white space-y-3 ">
             <h3 className="text-xl sm:text-2xl font-semibold">Experienced & Qualified</h3>
             <p className="text-base sm:text-lg">ASHA-Certified Speech-Language Pathologist</p>
             <p className="text-base sm:text-lg">12 Years Experience in Hospital + School Settings</p>
@@ -58,21 +58,21 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
           <h2 className="text-3xl text-gray-800 text-center mb-12">Who I Help</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-3xl p-8 text-center space-y-4 hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-3xl p-8 text-center space-y-4">
               <div className="w-20 h-20 bg-gradient-to-br from-pink-300 to-purple-300 rounded-full mx-auto flex items-center justify-center">
                 <Baby className="text-white" width={48} height={48} />
               </div>
               <h3 className="text-lg font-medium text-gray-800">Children ages 0–6</h3>
               <p className="text-gray-600 text-sm">Supporting your child&apos;s early communication journey</p>
             </div>
-            <div className="bg-white rounded-3xl p-8 text-center space-y-4 hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-3xl p-8 text-center space-y-4">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-300 to-teal-300 rounded-full mx-auto flex items-center justify-center">
                 <UserRound className="text-white" width={48} height={48} />
               </div>
               <h3 className="text-lg font-medium text-gray-800">Parents & Caregivers</h3>
               <p className="text-gray-600 text-sm">Empowering families with tools and guidance</p>
             </div>
-            <div className="bg-white rounded-3xl p-8 text-center space-y-4 hover:shadow-lg transition-shadow sm:col-span-2 lg:col-span-1 sm:mx-auto lg:mx-0">
+            <div className="bg-white rounded-3xl p-8 text-center space-y-4 sm:col-span-2 lg:col-span-1 sm:mx-auto lg:mx-0">
               <div className="w-20 h-20 bg-gradient-to-br from-green-300 to-lime-300 rounded-full mx-auto flex items-center justify-center">
                 <HeartHandshake className="text-white" width={48} height={48} />
               </div>
@@ -91,7 +91,7 @@ export default function HomePage() {
             Specialized support for your child&apos;s unique language needs
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-white rounded-2xl p-6 flex items-center gap-4 hover:shadow-lg transition-shadow cursor-pointer">
+            <div className="bg-white rounded-2xl p-6 flex items-center gap-4">
               <div className="w-12 h-12 bg-orange-300 rounded-xl flex-shrink-0 flex items-center justify-center">
                 <MessageCircle className="w-8 h-8 text-white" />
               </div>
@@ -100,7 +100,7 @@ export default function HomePage() {
                 <p className="text-sm text-gray-600">Building foundational communication skills</p>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-6 flex items-center gap-4 hover:shadow-lg transition-shadow cursor-pointer">
+            <div className="bg-white rounded-2xl p-6 flex items-center gap-4">
               <div className="w-12 h-12 bg-purple-300 rounded-xl flex-shrink-0 flex items-center justify-center">
                 <UsersIcon className="w-8 h-8 text-white" />
               </div>
@@ -109,7 +109,7 @@ export default function HomePage() {
                 <p className="text-sm text-gray-600">Supporting social interaction and connection</p>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-6 flex items-center gap-4 hover:shadow-lg transition-shadow cursor-pointer">
+            <div className="bg-white rounded-2xl p-6 flex items-center gap-4">
               <div className="w-12 h-12 bg-teal-300 rounded-xl flex-shrink-0 flex items-center justify-center">
                 <Mic className="w-8 h-8 text-white" />
               </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
                 <p className="text-sm text-gray-600">Exploring all ways to communicate</p>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-6 flex items-center gap-4 hover:shadow-lg transition-shadow cursor-pointer">
+            <div className="bg-white rounded-2xl p-6 flex items-center gap-4">
               <div className="w-12 h-12 bg-green-300 rounded-xl flex-shrink-0 flex items-center justify-center">
                 <GraduationCap className="w-8 h-8 text-white" />
               </div>
@@ -143,7 +143,7 @@ export default function HomePage() {
       {/* Therapy Approach */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-8 max-w-4xl">
-          <div className="bg-white rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-lg">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 text-center space-y-6 ">
             <h2 className="text-3xl text-gray-800">My Approach</h2>
             <div className="flex justify-center gap-4 sm:gap-6 flex-wrap">
               <span className="bg-orange-100 text-orange-700 px-6 py-3 rounded-full text-sm sm:text-base">Child-Led</span>

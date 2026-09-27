@@ -23,7 +23,7 @@ export default function ServicesPage() {
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
                 {/* Foundational Connection */}
-                <div className="flex flex-col items-center bg-white/70 rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col items-center bg-white/70 rounded-2xl p-6">
                   <Handshake className="mb-3 text-purple-500" size={38} />
                   <h3 className="text-xl font-semibold text-gray-800 text-center mb-3">Foundational Connection</h3>
                   <ul className="space-y-4 text-sm">
@@ -44,7 +44,7 @@ export default function ServicesPage() {
                   </ul>
                 </div>
                 {/* Sustainable Progress */}
-                <div className="flex flex-col items-center bg-white/70 rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col items-center bg-white/70 rounded-2xl p-6">
                   <Recycle className="mb-3 text-orange-500" size={38} />
                   <h3 className="text-xl font-semibold text-gray-800 text-center mb-3">Sustainable Progress</h3>
                   <ul className="space-y-4 text-sm">
@@ -63,7 +63,7 @@ export default function ServicesPage() {
                   </ul>
                 </div>
                 {/* Accessible Communication */}
-                <div className="flex flex-col items-center bg-white/70 rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col items-center bg-white/70 rounded-2xl p-6">
                   <MessageCircle className="mb-3 text-pink-500" size={38} />
                   <h3 className="text-xl font-semibold text-gray-800 text-center mb-3">Accessible Communication</h3>
                   <ul className="space-y-4 text-sm">
@@ -92,7 +92,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Early Language Development */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-16 h-16 bg-gradient-to-br from-orange-300 to-red-300 rounded-2xl flex items-center justify-center mb-6">
                 <MessageCircle className="text-white" size={32} />
               </div>
@@ -125,7 +125,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Autism & Social Communication */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-16 h-16 bg-gradient-to-br from-purple-300 to-pink-300 rounded-2xl flex items-center justify-center mb-6">
                 <UsersIcon className="text-white" size={32} />
               </div>
@@ -158,7 +158,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Augmentative & Alternative Communication (AAC) */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-16 h-16 bg-gradient-to-br from-teal-300 to-blue-300 rounded-2xl flex items-center justify-center mb-6">
                 <Mic className="text-white" size={32} />
               </div>
@@ -191,7 +191,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Family Coaching */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-16 h-16 bg-gradient-to-br from-green-300 to-lime-300 rounded-2xl flex items-center justify-center mb-6">
                 <GraduationCap className="text-white" size={32} />
               </div>
@@ -229,7 +229,7 @@ export default function ServicesPage() {
       {/* What to Expect */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-8 max-w-4xl">
-          <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-lg">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 ">
             <h2 className="text-3xl text-gray-800 mb-8 text-center">What to Expect</h2>
             <div className="space-y-6">
               <div className="flex gap-6">

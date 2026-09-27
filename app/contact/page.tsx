@@ -54,7 +54,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 sm:p-12 ">
               <h2 className="text-2xl text-gray-800 mb-6">Send Me a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <div className="bg-white rounded-3xl p-8 shadow-lg">
+              <div className="bg-white rounded-3xl p-8 ">
                 <h2 className="text-2xl text-gray-800 mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -198,7 +198,7 @@ export default function ContactPage() {
       {/* Map Placeholder - Will be added later */}
       {/* <section className="py-16">
         <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div className="bg-white rounded-3xl overflow-hidden ">
             <div className="bg-gradient-to-r from-teal-200 to-blue-200 h-96 flex items-center justify-center">
               <div className="text-center text-gray-600">
                 <MapPin size={48} className="mx-auto mb-4 text-teal-600" />

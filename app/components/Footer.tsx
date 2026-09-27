@@ -1,7 +1,10 @@
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import bcptIcon from '@/public/bcpt-icon.svg';
+import linkedinIcon from '@/public/icons/linkedin.svg';
+import facebookIcon from '@/public/icons/facebook.svg';
+import instagramIcon from '@/public/icons/instagram.svg';
 
 export function Footer() {
   return (
@@ -73,10 +76,13 @@ export function Footer() {
               {/* Social Media */}
               <div className="flex gap-4 mt-4 md:justify-end">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors" aria-label="Facebook">
-                  <Facebook size={20} />
+                  <Image src={facebookIcon} alt="Facebook" width={20} height={20} />
                 </a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors" aria-label="Instagram">
-                  <Instagram size={20} />
+                  <Image src={instagramIcon} alt="Instagram" width={20} height={20} />
+                </a>
+                <a href="https://www.linkedin.com/in/michelle-armenta-57901b439/" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors" aria-label="LinkedIn">
+                  <Image src={linkedinIcon} alt="LinkedIn" width={20} height={20} />
                 </a>
               </div>
             </div>

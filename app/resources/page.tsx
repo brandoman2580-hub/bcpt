@@ -25,7 +25,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
           <h2 className="text-3xl text-gray-800 mb-8">Tips & Strategies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-12 h-12 bg-gradient-to-br from-orange-300 to-red-300 rounded-xl flex items-center justify-center mb-4">
                 <Lightbulb className="text-white" size={24} />
               </div>
@@ -66,7 +66,7 @@ export default function ResourcesPage() {
               </Accordion>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-300 to-pink-300 rounded-xl flex items-center justify-center mb-4">
                 <Lightbulb className="text-white" size={24} />
               </div>
@@ -107,7 +107,7 @@ export default function ResourcesPage() {
               </Accordion>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-12 h-12 bg-gradient-to-br from-teal-300 to-blue-300 rounded-xl flex items-center justify-center mb-4">
                 <Lightbulb className="text-white" size={24} />
               </div>
@@ -148,7 +148,7 @@ export default function ResourcesPage() {
               </Accordion>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-12 h-12 bg-gradient-to-br from-green-300 to-lime-300 rounded-xl flex items-center justify-center mb-4">
                 <Lightbulb className="text-white" size={24} />
               </div>
@@ -195,61 +195,16 @@ export default function ResourcesPage() {
       {/* Milestones */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-8 max-w-4xl">
-          <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-lg">
-            <h2 className="text-3xl text-gray-800 mb-8 text-center">Communication Milestones</h2>
+          <div className="bg-white rounded-3xl p-8 sm:p-12 ">
+            <h2 className="text-3xl text-gray-800 mb-8 text-center">ASHA&apos;s Communication Milestones</h2>
             <p className="text-center text-gray-600 mb-8">
-              Here are some general guidelines for what to expect at different ages. Remember, every child develops at their own pace!
+              Here are the ASHA guidelines for what to expect at different ages. Remember, every child develops at their own pace!
             </p>
-            <div className="space-y-6">
-              <div className="border-l-4 border-teal-500 pl-6">
-                <h3 className="text-xl font-medium text-gray-800 mb-2">12-18 Months</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Uses 10-20 words</li>
-                  <li>• Points to show interest</li>
-                  <li>• Follows simple directions</li>
-                  <li>• Brings you things to show you</li>
-                </ul>
-              </div>
-
-              <div className="border-l-4 border-purple-500 pl-6">
-                <h3 className="text-xl font-medium text-gray-800 mb-2">18-24 Months</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Uses 50+ words</li>
-                  <li>• Combines two words together</li>
-                  <li>• Imitates words and actions</li>
-                  <li>• Shows interest in other children</li>
-                </ul>
-              </div>
-
-              <div className="border-l-4 border-orange-500 pl-6">
-                <h3 className="text-xl font-medium text-gray-800 mb-2">2-3 Years</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Uses 3-4 word sentences</li>
-                  <li>• Asks simple questions</li>
-                  <li>• Understands simple stories</li>
-                  <li>• Engages in pretend play</li>
-                </ul>
-              </div>
-
-              <div className="border-l-4 border-green-500 pl-6">
-                <h3 className="text-xl font-medium text-gray-800 mb-2">3-4 Years</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Uses sentences of 4+ words</li>
-                  <li>• Tells simple stories</li>
-                  <li>• Most speech is understandable</li>
-                  <li>• Plays cooperatively with peers</li>
-                </ul>
-              </div>
-
-              <div className="border-l-4 border-blue-500 pl-6">
-                <h3 className="text-xl font-medium text-gray-800 mb-2">4-5 Years</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Uses complete sentences</li>
-                  <li>• Tells detailed stories</li>
-                  <li>• Speech is clear to strangers</li>
-                  <li>• Engages in complex pretend play</li>
-                </ul>
-              </div>
+            <div className="space-y-6 flex flex-col items-center justify-center">
+              <a href="https://www.asha.org/public/developmental-milestones/communication-milestones/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 flex items-center gap-2">
+                ASHA&apos;s Communication Milestones
+                <ExternalLink size={14} />
+              </a>
             </div>
 
           </div>
@@ -261,7 +216,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
           <h2 className="text-3xl text-gray-800 mb-8">Recommended Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-blue-400 rounded-xl flex items-center justify-center mb-4">
                 <Book className="text-white" size={24} />
               </div>
@@ -282,7 +237,7 @@ export default function ResourcesPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center mb-4">
                 <ExternalLink className="text-white" size={24} />
               </div>
@@ -309,7 +264,7 @@ export default function ResourcesPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-lime-400 rounded-xl flex items-center justify-center mb-4">
                 <Download className="text-white" size={24} />
               </div>
@@ -330,7 +285,7 @@ export default function ResourcesPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-8 ">
               <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-400 rounded-xl flex items-center justify-center mb-4">
                 <Book className="text-white" size={24} />
               </div>
