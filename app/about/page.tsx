@@ -1,6 +1,7 @@
 import { Heart, Users, Target, Award } from 'lucide-react';
 import Image from 'next/image';
 import ashaIcon from '@/public/asha-ccc-slp-color.jpg';
+import michellePhoto from '@/public/Michelle_BCPT_Website_Photo_20261005.png';
 
 export default function AboutPage() {
   const yearStart = 2014;
@@ -19,15 +20,25 @@ export default function AboutPage() {
 
       {/* My Story */}
       <section className="py-16">
-        <div className="container mx-auto px-4 sm:px-8 max-w-4xl">
-          <div className="bg-white rounded-3xl p-8 sm:p-12 ">
-            <h2 className="text-3xl text-gray-800 mb-6">My Story</h2>
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+        <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
+          <div className="bg-white rounded-3xl p-8 sm:p-12">
+            <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-10">
+              <Image
+                src={michellePhoto}
+                alt="Michelle Armenta, pediatric speech-language pathologist"
+                sizes="224px"
+                className="h-auto w-56 shrink-0 rounded-2xl"
+              />
+              <div className="min-w-0 w-full">
+                <h2 className="text-3xl text-gray-800 mb-6">My Story</h2>
+                <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>Michelle Armenta has been delivering speech therapy services in the Tri-Cities area for over <span>{yearsOfExp}</span> years. She earned her bachelor’s degree in Communication Disorders at Eastern Washington University and went on to finish her Master’s Degree in Speech and Hearing Sciences at WSU Spokane in 2013.  Her interest in the field developed when her daughter (a super preemie) spent more than 100 days in the Neonatal Intensive Care Unit (NICU) followed by intense outpatient therapy for feeding, speech, physical, and occupational therapy. Witnessing language development in the children who attended the birth to three program, and being involved with her own child’s communication development led to her new career path.</p>
               <p>Michelle has encountered positive and negative experiences with staff that had treated her daughter in the past. There were positive experiences with staff who encouraged parent participation in therapy.  The environment of most of the therapy spaces were a safe place for parents to meet and work together. There were great transitional supports for children from birth to three programs to Kindergarten. This helped her daughter’s development and improved family and caregiver engagement.  But there were unfortunately challenging experiences with professionals who were inconsiderate and destroyed the confidence of the family and caregivers. </p>
               <p>From those experiences, Michelle’s mission is to understand the family’s needs, recommend resources, provide a home therapy program, introduce meaningful moments in the community, and find an evolving communication system that is suitable for the family.and the child.</p>
               <p>Each child has an autonomous communication style. </p>
               <p>She practices using a variety of therapy strategies and core theories of communication development like Greenspan Floortime, Pivotal Response Training, Piaget Core Development concepts, Vygotsky’s Sociocultural of Cognitive Development, and Hanen Fundamentals.  </p>
+              </div>
+              </div>
             </div>
           </div>
         </div>
