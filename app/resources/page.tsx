@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/app/components/ui/accordion';
+import { RecommendedResources } from '@/app/components/recommended-resources';
 import { Book, Lightbulb, Download, ExternalLink } from 'lucide-react';
 
 export default function ResourcesPage() {
@@ -215,97 +216,132 @@ export default function ResourcesPage() {
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-8 max-w-5xl">
           <h2 className="text-3xl text-gray-800 mb-8">Recommended Resources</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-3xl p-8 ">
-              <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-blue-400 rounded-xl flex items-center justify-center mb-4">
-                <Book className="text-white" size={24} />
-              </div>
-              <h3 className="text-xl font-medium text-gray-800 mb-3">Books for Parents</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>&quot;It Takes Two to Talk&quot; by Ayala Manolson</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>&quot;The Late Talker&quot; by Marilyn C. Agin</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>&quot;More Than Words&quot; by Fern Sussman</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 ">
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center mb-4">
-                <ExternalLink className="text-white" size={24} />
-              </div>
-              <h3 className="text-xl font-medium text-gray-800 mb-3">Helpful Websites</h3>
-              <ul className="space-y-3">
-                <li>
-                  <a href="https://www.asha.org" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 flex items-center gap-2">
-                    ASHA (American Speech-Language-Hearing Association)
-                    <ExternalLink size={14} />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.talkingpoint.org.uk" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 flex items-center gap-2">
-                    Talking Point - Speech and Language Advice
-                    <ExternalLink size={14} />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.zerotothree.org" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 flex items-center gap-2">
-                    Zero to Three - Early Development Resources
-                    <ExternalLink size={14} />
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 ">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-lime-400 rounded-xl flex items-center justify-center mb-4">
-                <Download className="text-white" size={24} />
-              </div>
-              <h3 className="text-xl font-medium text-gray-800 mb-3">Activity Ideas</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>Everyday routines as language opportunities</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>Simple songs and rhymes for language learning</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>Play-based activities to build communication</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-3xl p-8 ">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-400 rounded-xl flex items-center justify-center mb-4">
-                <Book className="text-white" size={24} />
-              </div>
-              <h3 className="text-xl font-medium text-gray-800 mb-3">Children&apos;s Book Recommendations</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>Board books with repetitive text</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>Interactive books with flaps and textures</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span>Books about emotions and social situations</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <RecommendedResources
+            cards={[
+              {
+                title: "Books for Parents",
+                icon: Book,
+                iconClassName: "bg-gradient-to-br from-teal-400 to-blue-400",
+                thumbnailClassName:
+                  "size-24 rounded-lg bg-orange-50 object-contain ring-1 ring-black/10",
+                items: [
+                  {
+                    label: "Elaine Weitzman",
+                    detail: "It Takes Two to Talk Guidebook, Fifth Edition",
+                    imageSrc: "/book_cover_art/parent_books/ItTakesTwoToTalk_5thEd.jpg",
+                  },
+                  {
+                    label: "James D. MacDonald",
+                    detail: "Communicating Partners",
+                    imageSrc: "/book_cover_art/parent_books/Communicating_Partners.jpg",
+                  },
+                ],
+              },
+              {
+                title: "Helpful Websites",
+                icon: ExternalLink,
+                iconClassName: "bg-gradient-to-br from-purple-400 to-pink-400",
+                items: [
+                  {
+                    label: "Parent education (SEL)",
+                    href: "https://csefel.vanderbilt.edu/resources/family.html",
+                  },
+                  {
+                    label: "Music ideas (bilingual)",
+                    href: "https://bilinguistics.com/music-for-speech-therapy/",
+                  },
+                  {
+                    label: "Craft ideas",
+                    href: "https://www.dltk-kids.com/",
+                  },
+                  {
+                    label: "Milestones and Communication tips (ASHA)",
+                    href: "https://www.asha.org/public/developmental-milestones/communication-milestones/",
+                  },
+                ],
+              },
+              {
+                title: "Activity Ideas",
+                icon: Download,
+                iconClassName: "bg-gradient-to-br from-green-400 to-lime-400",
+                items: [
+                  { label: "Everyday routines as language opportunities" },
+                  { label: "Simple songs and rhymes for language learning" },
+                  { label: "Play-based activities to build communication" },
+                ],
+              },
+              {
+                title: "Children's Book Recommendations",
+                icon: Book,
+                iconClassName: "bg-gradient-to-br from-orange-400 to-red-400",
+                thumbnailClassName:
+                  "size-24 rounded-lg bg-orange-50 object-contain ring-1 ring-black/10",
+                items: [
+                  {
+                    label: "Eric Carle",
+                    detail:
+                      "The Very Hungry Caterpillar, The Very Busy Spider, Brown Bear, Brown Bear, What Do You See?, Polar Bear, Polar Bear, What Do You Hear?, and The Grouchy Ladybug",
+                    imageSrc: "/book_cover_art/childrens_books/TheVeryHungryCaterpillar.jpg",
+                  },
+                  {
+                    label: "Alice Schertle",
+                    detail: "The Little Blue Truck series",
+                    imageSrc: "/book_cover_art/childrens_books/TheLittleBlueTruck.jpg",
+                  },
+                  {
+                    label: "Jan Brett",
+                    detail: "The Hat, The Mitten, The Gingerbread Baby",
+                    imageSrc: "/book_cover_art/childrens_books/TheHat.jpg",
+                  },
+                  {
+                    label: "Karma Wilson and Jane Chapman",
+                    detail: "The Bear Book series (Bear Snores On, Bear Feels Scared, and others)",
+                    imageSrc: "/book_cover_art/childrens_books/BearSnoresOn.jpg",
+                  },
+                  {
+                    label: "Spike Lee and Tonya Lewis Lee",
+                    detail: "Please, Baby, Please",
+                    imageSrc: "/book_cover_art/childrens_books/PleaseBabyPlease.jpg",
+                  },
+                  {
+                    label: "Marcus Pfister",
+                    detail: "The Rainbow Fish",
+                    imageSrc: "/book_cover_art/childrens_books/TheRainbowFish.jpg",
+                  },
+                  {
+                    label: "Julia Donaldson",
+                    detail: "Room on the Broom",
+                    imageSrc: "/book_cover_art/childrens_books/RoomOnTheBroom.jpg",
+                  },
+                  {
+                    label: "Sue Williams",
+                    detail: "I Went Walking",
+                    imageSrc: "/book_cover_art/childrens_books/IWentWalking.jpg",
+                  },
+                  {
+                    label: "Margaret Wise Brown",
+                    detail: "Big Red Barn",
+                    imageSrc: "/book_cover_art/childrens_books/BigRedBarn.jpg",
+                  },
+                  {
+                    label: "Dr. Seuss",
+                    detail: "Hop on Pop, Put Me in the Zoo",
+                    imageSrc: "/book_cover_art/childrens_books/HopOnPop.png",
+                  },
+                  {
+                    label: "Sandra Boynton",
+                    detail: "The Going to Bed Book",
+                    imageSrc: "/book_cover_art/childrens_books/TheGoingToBedBook.jpg",
+                  },
+                  {
+                    label: "Melanie Gerth",
+                    detail: "Ten Little Ladybugs",
+                    imageSrc: "/book_cover_art/childrens_books/TenLittleLadybugs.jpg",
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
       </section>
     </div>
