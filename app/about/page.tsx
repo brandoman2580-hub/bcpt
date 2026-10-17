@@ -1,7 +1,7 @@
 import { Heart, Users, Target, Award } from 'lucide-react';
 import Image from 'next/image';
 import ashaIcon from '@/public/asha-ccc-slp-color.jpg';
-import michellePhoto from '@/public/Michelle_BCPT_Website_Photo_20261005.png';
+import michellePhoto from '@/public/Michelle_BCPT_Website_Photo_20261005.webp';
 
 export default function AboutPage() {
   const yearStart = 2014;
