@@ -1,42 +1,7 @@
-'use client';
-
-import { useState } from 'react';
-import { Phone, MapPin, Clock, Send } from 'lucide-react';
-import { Button } from '@/app/components/ui/button';
-import { Input } from '@/app/components/ui/input';
-import { Textarea } from '@/app/components/ui/textarea';
-import { Label } from '@/app/components/ui/label';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { ContactForm } from './contact-form';
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    childAge: '',
-    message: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      childAge: '',
-      message: '',
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
     <div className="bg-orange-50">
       {/* Hero Section */}
@@ -56,93 +21,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-white rounded-3xl p-8 sm:p-12 ">
               <h2 className="text-2xl text-gray-800 mb-6">Send Me a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="text-gray-700 mb-2 block">
-                    Your Name *
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition-colors"
-                    placeholder="Enter your name"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="email" className="text-gray-700 mb-2 block">
-                    Email Address *
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition-colors"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="phone" className="text-gray-700 mb-2 block">
-                    Phone Number
-                  </Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition-colors"
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="childAge" className="text-gray-700 mb-2 block">
-                    Child&apos;s Age
-                  </Label>
-                  <Input
-                    id="childAge"
-                    name="childAge"
-                    type="text"
-                    value={formData.childAge}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition-colors"
-                    placeholder="e.g., 2 years old"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="message" className="text-gray-700 mb-2 block">
-                    Message *
-                  </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition-colors resize-none"
-                    placeholder="Tell me about your concerns or what you'd like to discuss..."
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-full text-lg transition-colors flex items-center justify-center gap-2"
-                >
-                  Send Message
-                  <Send size={18} />
-                </Button>
-              </form>
+              <ContactForm />
             </div>
 
             {/* Contact Information */}
@@ -158,6 +37,21 @@ export default function ContactPage() {
                       <h3 className="text-lg font-medium text-gray-800 mb-1">Phone</h3>
                       <a href="tel:5551234567" className="text-gray-600 hover:text-teal-600 transition-colors">
                         (509) 499-6047
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Mail className="text-white" size={20} />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-lg font-medium text-gray-800 mb-1">Email</h3>
+                      <a
+                        href="mailto:bcptspeechservices@outlook.com"
+                        className="text-gray-600 hover:text-teal-600 transition-colors break-words"
+                      >
+                        bcptspeechservices@<wbr />outlook.com
                       </a>
                     </div>
                   </div>
@@ -182,9 +76,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-medium text-gray-800 mb-1">Hours</h3>
                       <p className="text-gray-600">
-                        Monday - Friday: 9:00 AM - 5:00 PM<br />
-                        Saturday: By appointment<br />
-                        Sunday: Closed
+                        Thursday & Friday: 9:00 AM - 4:30 PM
                       </p>
                     </div>
                   </div>
