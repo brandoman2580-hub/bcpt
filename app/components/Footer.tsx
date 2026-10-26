@@ -63,7 +63,7 @@ export function Footer() {
                 </li>
                 <li className="flex items-center gap-2 md:justify-end">
                   <Mail size={16} />
-                  <span>hello@blossomingconnections.com</span>
+                  <span>bcptspeechservices@outlook.com</span>
                 </li>
                 <li className="flex items-start gap-2 md:justify-end">
                   <MapPin size={16} className="mt-1 flex-shrink-0" />
